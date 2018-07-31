@@ -1,5 +1,50 @@
 /* Global Styles */
+  /* font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Varela Round', sans-serif;
+  font-family: 'Kanit', sans-serif; */
 
+body {
+  font-family: 'Kanit', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Varela Round', sans-serif;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.navbar {
+  margin: 0;
+  position: fixed;
+}
+
+.navbar-brand h1 {
+  font-family: 'Libre Franklin', sans-serif;
+  margin: 0;
+}
+
+.navbar-brand {
+  padding: 10px;
+}
+
+.section-1 {
+  background-image: url("../img/hero.jpg");
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+.reservation-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #eeeeee;
+}
 /* Small Screens */
 @media only screen and (min-width : 768px) {
 }

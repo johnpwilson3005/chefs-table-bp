@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body data-spy="scroll" data-target="#main-nav">
     <nav class="navbar navbar-default navbar-fixed-top" id="main-nav">
         <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -31,18 +31,22 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <!--
-                    <li><a href="#home-section">Home</a></li>
-                    <li><a href="#menu-section">Explore the Menu</a></li>
-                    <li><a href="#reservation-section">Make a Reservation</a></li>
-                    -->
+                    <li>
+                      <a href="#home-section">Home</a>
+                    </li>
+                    <li>
+                      <a href="#menu-section">Explore the Menu</a>
+                    </li>
+                    <li>
+                      <a href="#reservation-section">Make a Reservation</a>
+                    </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container -->
     </nav><!-- /.navbar -->
 
     <!-- body site code here -->
-    <section class="section-1 text-white">
+    <section id="home-section" class="section-1 text-white">
       <div class="container text-center">
         <div class="row">
           <div class="col-sm-12">
@@ -54,8 +58,74 @@
         </div><!-- .row -->
       </div><!-- .container -->
     </section><!-- .section-1 -->
+<!-- middle section -->
+    <section id="menu-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div>
+  <!-- Nav tabs -->
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#menu-appetizers" aria-controls="home" role="tab" data-toggle="tab">Appetizers</a>
+                </li>
+                <li role="presentation"><a href="#menu-entrees" aria-controls="profile" role="tab" data-toggle="tab">Entrees</a>
+                </li>
+                <li role="presentation"><a href="#menu-desserts" aria-controls="messages" role="tab" data-toggle="tab">Desserts</a>
+                </li>
+                <li role="presentation"><a href="#manu-cocktails" aria-controls="settings" role="tab" data-toggle="tab">Cocktails</a>
+                </li>
+              </ul>
+  <!-- Tab panes -->
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="menu-appetizers">
+                  <div class="row">
+                    <div class="col-md-6">
+                    left side appetizers
+                    </div>
+                    <div class="col-md-6">
+                    right side appetizers
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="menu-entrees">
+                  <div class="row">
+                    <div class="col-md-6">
+                      left entrees
+                    </div>
+                    <div class="col-md-6">
+                      right entrees
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="menu-desserts">
+                  <div class="row">
+                    <div class="col-md-6">
+                      left desserts
+                    </div>
+                    <div class="col-md-6">
+                      right desserts
+                    </div>
+                  </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="menu-cocktails">
+                  <div class="row">
+                    <div class="col-md-6">
+                      left drinks
+                    </div>
+                    <div class="col-md-6">
+                      right drinks
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- footer -->
-    <section class="reservation-section">
+    <section id="reservation-section" class="reservation-section">
       <div class="container text-center">
         <div class="row">
           <div class="col-sm-12">
@@ -75,8 +145,6 @@
         </div>
       </div>
     </section>
-    Larry is a wizard
-
     <!-- link all the scripts here -->
     <script src="js/jquery-3.3.1.min.js" charset="utf-8"></script>
     <script src="js/bootstrap.min.js" charset="utf-8"></script>

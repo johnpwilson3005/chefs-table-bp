@@ -6,6 +6,7 @@
 body {
   font-family: 'Kanit', sans-serif;
   position: relative;
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -16,14 +17,27 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
 }
 
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+  color: #ffffff;
+  background: transparent;
+}
+
+.navbar-default {
+  background-color: #000000;
+}
+
 .navbar {
   margin: 0;
   position: fixed;
+  border: 0;
 }
 
 .navbar-brand h1 {
   font-family: 'Libre Franklin', sans-serif;
   margin: 0;
+  color: #ffffff;
 }
 
 .navbar-brand {
@@ -42,10 +56,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .reservation-section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: #eeeeee;
+  /* height: 100vh; */
+}
+  /* Menu Section */
+
+.menu-section {
   padding-top: 60px;
   padding-bottom: 60px;
-  background: #eeeeee;
+  /* height: 100vh; */
 }
+
+
+
 /* Small Screens */
 @media only screen and (min-width : 768px) {
 }

@@ -38,7 +38,7 @@
                       <a href="#menu-section">Explore the Menu</a>
                     </li>
                     <li>
-                      <a href="#reservation-section">Make a Reservation</a>
+                        <a href="#reservation-section">Make a Reservation</a>
                     </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
@@ -59,61 +59,62 @@
       </div><!-- .container -->
     </section><!-- .section-1 -->
 <!-- middle section -->
-    <section id="menu-section">
+    <section id="menu-section" class="menu-section">
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
             <div>
   <!-- Nav tabs -->
               <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#menu-appetizers" aria-controls="home" role="tab" data-toggle="tab">Appetizers</a>
-                </li>
-                <li role="presentation"><a href="#menu-entrees" aria-controls="profile" role="tab" data-toggle="tab">Entrees</a>
-                </li>
-                <li role="presentation"><a href="#menu-desserts" aria-controls="messages" role="tab" data-toggle="tab">Desserts</a>
-                </li>
-                <li role="presentation"><a href="#manu-cocktails" aria-controls="settings" role="tab" data-toggle="tab">Cocktails</a>
-                </li>
+                <li role="presentation" class="active"><a href="#menu-appetizers" aria-controls="home" role="tab" data-toggle="tab">Appetizers</a></li>
+                <li role="presentation"><a href="#menu-entrees" aria-controls="profile" role="tab" data-toggle="tab">Entrees</a></li>
+                <li role="presentation"><a href="#menu-desserts" aria-controls="messages" role="tab" data-toggle="tab">Desserts</a></li>
+                <li role="presentation"><a href="#menu-cocktails" aria-controls="settings" role="tab" data-toggle="tab">Cocktails</a></li>
               </ul>
   <!-- Tab panes -->
               <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="menu-appetizers">
+                <div role="tabpanel" class="tab-pane active fade in" id="menu-appetizers">
                   <div class="row">
-                    <div class="col-md-6">
-                    left side appetizers
+                    <div class="col-sm-6">
+                    <h2>Avacado Egg Toast</h2>
+                    <p>Our avacado egg toast is the the most delicate crispy piece of bread toasted to perfection paired with the freshest avacados the west coast has to offer and home grown eggs from right here in the valley.</p>
                     </div>
-                    <div class="col-md-6">
-                    right side appetizers
+                    <div class="col-sm-6">
+                    <img src="img/appetizers.jpg" alt="avacado egg toast">
                     </div>
                   </div>
                 </div>
-                <div role="tabpanel" class="tab-pane" id="menu-entrees">
+                <div role="tabpanel" class="tab-pane fade" id="menu-entrees">
                   <div class="row">
-                    <div class="col-md-6">
-                      left entrees
+                    <div class="col-sm-6">
+                      <h2>Spaghetti</h2>
+                      <p>Our spaghetti is rolled for 3 hours before cooking so our dough can fully rise before it even begins to look like spaghetti. From there our home chefs make magic and take our home fresh noodles to perfection. And then we put Ragu on it.</p>
                     </div>
-                    <div class="col-md-6">
-                      right entrees
+                    <div class="col-sm-6">
+                      <img src="img/entrees.jpg" alt="Spaghetti">
                     </div>
                   </div>
                 </div>
-                <div role="tabpanel" class="tab-pane" id="menu-desserts">
+                <div role="tabpanel" class="tab-pane fade" id="menu-desserts">
                   <div class="row">
-                    <div class="col-md-6">
-                      left desserts
+                    <div class="col-sm-6">
+                      <h2>Dessert</h2>
+                      <p>Enjoy a decadent slice of cake crafted by the wholesome hands of our home town bakers. Our chocoate cake features a buttercream chocolate frosting with a crisp cool texture as well as an angel food chocolate center.</p>
                     </div>
-                    <div class="col-md-6">
-                      right desserts
+                    <div class="col-sm-6">
+                      <img src="img/desserts.jpg" alt="Chocolate Cake">
                     </div>
                   </div>
                 </div>
-                <div role="tabpanel" class="tab-pane" id="menu-cocktails">
-                  <div class="row">
-                    <div class="col-md-6">
-                      left drinks
-                    </div>
-                    <div class="col-md-6">
-                      right drinks
+                  <div role="tabpanel" class="tab-pane fade" id="menu-cocktails">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <h2>Cocktail Drinks</h2>
+                        <p>We offer the fanciest drinks you can possibly imagine. Have you ever had a drink with exotic leaves and flowers in it? Have you ever had a sip of liquid gold? You can have those things here at Our Restaurant Has Tables.</p>
+                      </div>
+                      <div class="col-sm-6">
+                        <img src="img/cocktails.jpg" alt="drinks">
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -121,8 +122,7 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
     <!-- footer -->
     <section id="reservation-section" class="reservation-section">
@@ -131,12 +131,33 @@
           <div class="col-sm-12">
             <h2>Make a Reservation</h2>
             <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <!-- <div class="form-group">
+              <label for="exampleInputFile">File input</label>
+              <input type="file" id="exampleInputFile">
+              <p class="help-block">Example block-level help text here.</p>
+            </div> -->
+            <!-- <div class="checkbox">
+            <label>
+              <input type="checkbox"> Check me out
+            </label>
+            </div> -->
+              <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            <!-- <form>
               First Name:<br>
               <input type="text"><br>
               Last Name:<br>
               <input type="text"><br><br>
               <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+            </form> -->
             <p>
               <i class="fab fa-facebook-square"></i> <i class="fab fa-twitter"></i>
               <i class="fab fa-instagram"></i>
